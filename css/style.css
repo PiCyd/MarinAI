@@ -22,6 +22,7 @@ header {
   text-align: center;
   color: rgba(0, 191, 255, 0.8);
   padding: 20px;
+  width: 100%; /* Ensure full width */
 }
 header img {
   position: absolute;
@@ -48,6 +49,7 @@ nav {
   background: rgba(0, 0, 102, 0.8);
   padding: 15px 0;
   text-align: center;
+  width: 100%; /* Ensure full width */
 }
 
 nav ul {
@@ -158,6 +160,7 @@ footer {
   color: #ccc;
   text-align: center;
   padding: 20px;
+  width: 100%; /* Ensure full width */
 }
 
 footer a {
@@ -174,9 +177,13 @@ footer a:hover {
   body, header, footer, nav, .grid {
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure full width */
+  }
+  .grid {
+    gap: 20px; /* Reduce gap for smaller screens */
   }
   .card{
-    max-width: 90%;
+    max-width: 100%;
     min-height: 180px; /* Minimum height for card */
     padding: 5px;
   }
@@ -185,10 +192,14 @@ footer a:hover {
   body, header, footer, nav, .grid{
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure full width */
+  }
+  .grid {
+    gap: 10px; /* Reduce gap for smaller screens */
   }
   .card{
-    max-width: 95%;
+    max-width: 100%;
     min-height: 150px; /* Minimum height for card */
-    padding: 2px;
+    padding: 5px;
   }
 }
