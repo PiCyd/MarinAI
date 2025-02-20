@@ -1,0 +1,194 @@
+/* Reset & General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bodoni MT', cursive;
+  background: url(../images/Ocean.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: midnightblue;
+  scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(rgba(0, 0, 51, 0.8), rgba(0, 0, 102, 0.8)), 
+              url(../images/Compas_eth.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: rgba(0, 191, 255, 0.8);
+  padding: 20px;
+}
+header img {
+  position: absolute;
+  right: 40px;
+  top : 50%;
+  max-width: 80px; /* Max size logo */
+  transform: translateY(-50%);
+  height: auto; /* Keep image proportions */
+  border-radius: 10px;
+}
+header h1 {
+  font-size: 4rem;
+  margin:0;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background: rgba(0, 0, 102, 0.8);
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #00bfff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00bfff;
+  color: black;
+}
+
+/* Sections */
+section {
+  padding: 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+/* Section with display Flex */
+.grid {
+  display: flex;                /* Active Flexbox */
+  justify-content: center;      /* Center horizontaly elements */
+  align-items: center;          /* Center verticaly elements */
+  gap: 100px;                    /* Space between cards */
+  height: 100vh;                /* Section occupy all space */
+  margin-top: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(0, 0, 51, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  max-width: 600px;
+  border: 2px solid #630d0d
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  color: #00bfff;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+}
+
+/* Twitter effect */
+.twitter-logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.twitter-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 51, 0.9);
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries to adjust width and height */
+@media screen and (max-width: 768px) {
+  body, header, footer, nav, .grid {
+    align-items: center;
+    text-align: center;
+  }
+  .card{
+    max-width: 90%;
+    min-height: 180px; /* Minimum height for card */
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body, header, footer, nav, .grid{
+    align-items: center;
+    text-align: center;
+  }
+  .card{
+    max-width: 95%;
+    min-height: 150px; /* Minimum height for card */
+    padding: 10px;
+  }
+}
