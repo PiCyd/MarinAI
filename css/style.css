@@ -170,7 +170,7 @@ footer a:hover {
 }
 
 /* Media queries to adjust width and height */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body, header, footer, nav, .grid {
     align-items: center;
     text-align: center;
@@ -178,10 +178,10 @@ footer a:hover {
   .card{
     max-width: 90%;
     min-height: 180px; /* Minimum height for card */
-    padding: 10px;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   body, header, footer, nav, .grid{
     align-items: center;
     text-align: center;
@@ -189,6 +189,6 @@ footer a:hover {
   .card{
     max-width: 95%;
     min-height: 150px; /* Minimum height for card */
-    padding: 10px;
+    padding: 2px;
   }
 }
