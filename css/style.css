@@ -174,10 +174,14 @@ footer a:hover {
 
 /* Media queries to adjust width and height */
 @media screen and (max-width: 1024px) {
-  body, header, footer, nav, .grid {
+  header, footer, nav, .grid {
     align-items: center;
     text-align: center;
     width: 100%; /* Ensure full width */
+  }
+  body {
+    margin: 0;
+    padding: 0;
   }
   .grid {
     gap: 20px; /* Reduce gap for smaller screens */
@@ -189,10 +193,14 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  body, header, footer, nav, .grid{
+  header, footer, nav, .grid{
     align-items: center;
     text-align: center;
     width: 100%; /* Ensure full width */
+  }
+  body {
+    margin: 0;
+    padding: 0;
   }
   .grid {
     gap: 10px; /* Reduce gap for smaller screens */
